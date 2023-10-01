@@ -1,5 +1,364 @@
 [
 	{
+		"kind": "class",
+		"name": "Console",
+		"location": {
+			"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
+			"line": 10,
+			"col": 0
+		},
+		"declarationKind": "export",
+		"jsDoc": {
+			"doc": "I got tired of having to rewrite this every time i wanted my own console format.. this is a heavy WIP. Its really nothing compared to my other console class where ever that went, if you see it let me know. 😛\n",
+			"tags": [
+				{
+					"kind": "constructor"
+				}
+			]
+		},
+		"classDef": {
+			"isAbstract": false,
+			"constructors": [],
+			"properties": [
+				{
+					"jsDoc": {
+						"doc": "This is the internal writer. if you see this you did a bad.",
+						"tags": [
+							{
+								"kind": "param",
+								"name": "content",
+								"doc": "a string of characters."
+							}
+						]
+					},
+					"tsType": {
+						"repr": "",
+						"kind": "fnOrConstructor",
+						"fnOrConstructor": {
+							"constructor": false,
+							"tsType": {
+								"repr": "unknown",
+								"kind": "keyword",
+								"keyword": "unknown"
+							},
+							"params": [
+								{
+									"kind": "rest",
+									"arg": {
+										"kind": "identifier",
+										"name": "content",
+										"optional": false,
+										"tsType": null
+									},
+									"tsType": {
+										"repr": "",
+										"kind": "array",
+										"array": {
+											"repr": "string",
+											"kind": "keyword",
+											"keyword": "string"
+										}
+									}
+								}
+							],
+							"typeParams": []
+						}
+					},
+					"readonly": false,
+					"accessibility": "private",
+					"optional": false,
+					"isAbstract": false,
+					"isStatic": true,
+					"name": "write",
+					"location": {
+						"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
+						"line": 55,
+						"col": 2
+					}
+				}
+			],
+			"indexSignatures": [],
+			"methods": [
+				{
+					"jsDoc": {
+						"doc": "Sets the foreground color"
+					},
+					"accessibility": null,
+					"optional": false,
+					"isAbstract": false,
+					"isStatic": true,
+					"name": "foregroundColor",
+					"kind": "getter",
+					"functionDef": {
+						"params": [],
+						"returnType": null,
+						"hasBody": true,
+						"isAsync": false,
+						"isGenerator": false,
+						"typeParams": []
+					},
+					"location": {
+						"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
+						"line": 18,
+						"col": 2
+					}
+				},
+				{
+					"jsDoc": {
+						"doc": "Gets the foreground color"
+					},
+					"accessibility": null,
+					"optional": false,
+					"isAbstract": false,
+					"isStatic": true,
+					"name": "foregroundColor",
+					"kind": "setter",
+					"functionDef": {
+						"params": [
+							{
+								"kind": "identifier",
+								"name": "color",
+								"optional": false,
+								"tsType": {
+									"repr": "ConsoleColor",
+									"kind": "typeRef",
+									"typeRef": {
+										"typeParams": null,
+										"typeName": "ConsoleColor"
+									}
+								}
+							}
+						],
+						"returnType": null,
+						"hasBody": true,
+						"isAsync": false,
+						"isGenerator": false,
+						"typeParams": []
+					},
+					"location": {
+						"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
+						"line": 25,
+						"col": 2
+					}
+				},
+				{
+					"jsDoc": {
+						"doc": "gets the background color"
+					},
+					"accessibility": null,
+					"optional": false,
+					"isAbstract": false,
+					"isStatic": true,
+					"name": "backgroundColor",
+					"kind": "getter",
+					"functionDef": {
+						"params": [],
+						"returnType": null,
+						"hasBody": true,
+						"isAsync": false,
+						"isGenerator": false,
+						"typeParams": []
+					},
+					"location": {
+						"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
+						"line": 32,
+						"col": 2
+					}
+				},
+				{
+					"jsDoc": {
+						"doc": "Sets the background color"
+					},
+					"accessibility": null,
+					"optional": false,
+					"isAbstract": false,
+					"isStatic": true,
+					"name": "backgroundColor",
+					"kind": "setter",
+					"functionDef": {
+						"params": [
+							{
+								"kind": "identifier",
+								"name": "color",
+								"optional": false,
+								"tsType": {
+									"repr": "ConsoleColor",
+									"kind": "typeRef",
+									"typeRef": {
+										"typeParams": null,
+										"typeName": "ConsoleColor"
+									}
+								}
+							}
+						],
+						"returnType": null,
+						"hasBody": true,
+						"isAsync": false,
+						"isGenerator": false,
+						"typeParams": []
+					},
+					"location": {
+						"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
+						"line": 39,
+						"col": 2
+					}
+				},
+				{
+					"jsDoc": {
+						"doc": "Inialized the default colors for some reason 😊."
+					},
+					"accessibility": "private",
+					"optional": false,
+					"isAbstract": false,
+					"isStatic": true,
+					"name": "SetDefaultColor",
+					"kind": "method",
+					"functionDef": {
+						"params": [],
+						"returnType": null,
+						"hasBody": true,
+						"isAsync": false,
+						"isGenerator": false,
+						"typeParams": []
+					},
+					"location": {
+						"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
+						"line": 46,
+						"col": 2
+					}
+				},
+				{
+					"jsDoc": {
+						"doc": "Resets the console colors"
+					},
+					"accessibility": null,
+					"optional": false,
+					"isAbstract": false,
+					"isStatic": true,
+					"name": "ResetColor",
+					"kind": "method",
+					"functionDef": {
+						"params": [],
+						"returnType": null,
+						"hasBody": true,
+						"isAsync": false,
+						"isGenerator": false,
+						"typeParams": []
+					},
+					"location": {
+						"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
+						"line": 62,
+						"col": 2
+					}
+				},
+				{
+					"jsDoc": {
+						"doc": "Writes the console.",
+						"tags": [
+							{
+								"kind": "param",
+								"name": "content",
+								"doc": "a string of characters."
+							}
+						]
+					},
+					"accessibility": null,
+					"optional": false,
+					"isAbstract": false,
+					"isStatic": true,
+					"name": "Write",
+					"kind": "method",
+					"functionDef": {
+						"params": [
+							{
+								"kind": "rest",
+								"arg": {
+									"kind": "identifier",
+									"name": "content",
+									"optional": false,
+									"tsType": null
+								},
+								"tsType": {
+									"repr": "",
+									"kind": "array",
+									"array": {
+										"repr": "string",
+										"kind": "keyword",
+										"keyword": "string"
+									}
+								}
+							}
+						],
+						"returnType": null,
+						"hasBody": true,
+						"isAsync": false,
+						"isGenerator": false,
+						"typeParams": []
+					},
+					"location": {
+						"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
+						"line": 71,
+						"col": 2
+					}
+				},
+				{
+					"jsDoc": {
+						"doc": "Writes the console and prints a new line at the end.",
+						"tags": [
+							{
+								"kind": "param",
+								"name": "content",
+								"doc": "a string of characters."
+							}
+						]
+					},
+					"accessibility": null,
+					"optional": false,
+					"isAbstract": false,
+					"isStatic": true,
+					"name": "WriteLine",
+					"kind": "method",
+					"functionDef": {
+						"params": [
+							{
+								"kind": "rest",
+								"arg": {
+									"kind": "identifier",
+									"name": "content",
+									"optional": false,
+									"tsType": null
+								},
+								"tsType": {
+									"repr": "",
+									"kind": "array",
+									"array": {
+										"repr": "string",
+										"kind": "keyword",
+										"keyword": "string"
+									}
+								}
+							}
+						],
+						"returnType": null,
+						"hasBody": true,
+						"isAsync": false,
+						"isGenerator": false,
+						"typeParams": []
+					},
+					"location": {
+						"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
+						"line": 81,
+						"col": 2
+					}
+				}
+			],
+			"extends": null,
+			"implements": [],
+			"typeParams": [],
+			"superTypeParams": []
+		}
+	},
+	{
 		"kind": "enum",
 		"name": "ConsoleColor",
 		"location": {
@@ -276,440 +635,6 @@
 					}
 				}
 			]
-		}
-	},
-	{
-		"kind": "variable",
-		"name": "default",
-		"location": {
-			"filename": "file:///G:/Development/Deno/DenoTools/src/Console/mod.ts",
-			"line": 4,
-			"col": 0
-		},
-		"declarationKind": "export",
-		"variableDef": {
-			"tsType": {
-				"repr": "Console",
-				"kind": "typeRef",
-				"typeRef": {
-					"typeParams": null,
-					"typeName": "Console"
-				}
-			},
-			"kind": "var"
-		}
-	},
-	{
-		"kind": "class",
-		"name": "Console",
-		"location": {
-			"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
-			"line": 10,
-			"col": 0
-		},
-		"declarationKind": "export",
-		"jsDoc": {
-			"doc": "I got tired of having to rewrite this every time i wanted my own console format.. this is a heavy WIP. Its really nothing compared to my other console class where ever that went, if you see it let me know. 😛\n",
-			"tags": [
-				{
-					"kind": "constructor"
-				}
-			]
-		},
-		"classDef": {
-			"isAbstract": false,
-			"constructors": [
-				{
-					"accessibility": null,
-					"hasBody": true,
-					"name": "constructor",
-					"params": [],
-					"location": {
-						"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
-						"line": 14,
-						"col": 2
-					}
-				}
-			],
-			"properties": [
-				{
-					"jsDoc": {
-						"doc": "This is the internal writer. if you see this you did a bad.",
-						"tags": [
-							{
-								"kind": "param",
-								"name": "content",
-								"doc": "a string of characters."
-							}
-						]
-					},
-					"tsType": {
-						"repr": "",
-						"kind": "fnOrConstructor",
-						"fnOrConstructor": {
-							"constructor": false,
-							"tsType": {
-								"repr": "unknown",
-								"kind": "keyword",
-								"keyword": "unknown"
-							},
-							"params": [
-								{
-									"kind": "rest",
-									"arg": {
-										"kind": "identifier",
-										"name": "content",
-										"optional": false,
-										"tsType": null
-									},
-									"tsType": {
-										"repr": "",
-										"kind": "array",
-										"array": {
-											"repr": "string",
-											"kind": "keyword",
-											"keyword": "string"
-										}
-									}
-								}
-							],
-							"typeParams": []
-						}
-					},
-					"readonly": false,
-					"accessibility": "private",
-					"optional": false,
-					"isAbstract": false,
-					"isStatic": false,
-					"name": "write",
-					"location": {
-						"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
-						"line": 58,
-						"col": 2
-					}
-				}
-			],
-			"indexSignatures": [],
-			"methods": [
-				{
-					"jsDoc": {
-						"doc": "Sets the foreground color"
-					},
-					"accessibility": null,
-					"optional": false,
-					"isAbstract": false,
-					"isStatic": false,
-					"name": "foregroundColor",
-					"kind": "getter",
-					"functionDef": {
-						"params": [],
-						"returnType": null,
-						"hasBody": true,
-						"isAsync": false,
-						"isGenerator": false,
-						"typeParams": []
-					},
-					"location": {
-						"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
-						"line": 21,
-						"col": 2
-					}
-				},
-				{
-					"jsDoc": {
-						"doc": "Gets the foreground color"
-					},
-					"accessibility": null,
-					"optional": false,
-					"isAbstract": false,
-					"isStatic": false,
-					"name": "foregroundColor",
-					"kind": "setter",
-					"functionDef": {
-						"params": [
-							{
-								"kind": "identifier",
-								"name": "color",
-								"optional": false,
-								"tsType": {
-									"repr": "ConsoleColor",
-									"kind": "typeRef",
-									"typeRef": {
-										"typeParams": null,
-										"typeName": "ConsoleColor"
-									}
-								}
-							}
-						],
-						"returnType": null,
-						"hasBody": true,
-						"isAsync": false,
-						"isGenerator": false,
-						"typeParams": []
-					},
-					"location": {
-						"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
-						"line": 28,
-						"col": 2
-					}
-				},
-				{
-					"jsDoc": {
-						"doc": "gets the background color"
-					},
-					"accessibility": null,
-					"optional": false,
-					"isAbstract": false,
-					"isStatic": false,
-					"name": "backgroundColor",
-					"kind": "getter",
-					"functionDef": {
-						"params": [],
-						"returnType": null,
-						"hasBody": true,
-						"isAsync": false,
-						"isGenerator": false,
-						"typeParams": []
-					},
-					"location": {
-						"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
-						"line": 35,
-						"col": 2
-					}
-				},
-				{
-					"jsDoc": {
-						"doc": "Sets the background color"
-					},
-					"accessibility": null,
-					"optional": false,
-					"isAbstract": false,
-					"isStatic": false,
-					"name": "backgroundColor",
-					"kind": "setter",
-					"functionDef": {
-						"params": [
-							{
-								"kind": "identifier",
-								"name": "color",
-								"optional": false,
-								"tsType": {
-									"repr": "ConsoleColor",
-									"kind": "typeRef",
-									"typeRef": {
-										"typeParams": null,
-										"typeName": "ConsoleColor"
-									}
-								}
-							}
-						],
-						"returnType": null,
-						"hasBody": true,
-						"isAsync": false,
-						"isGenerator": false,
-						"typeParams": []
-					},
-					"location": {
-						"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
-						"line": 42,
-						"col": 2
-					}
-				},
-				{
-					"jsDoc": {
-						"doc": "Inialized the default colors for some reason 😊."
-					},
-					"accessibility": "private",
-					"optional": false,
-					"isAbstract": false,
-					"isStatic": false,
-					"name": "SetDefaultColor",
-					"kind": "method",
-					"functionDef": {
-						"params": [],
-						"returnType": null,
-						"hasBody": true,
-						"isAsync": false,
-						"isGenerator": false,
-						"typeParams": []
-					},
-					"location": {
-						"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
-						"line": 49,
-						"col": 2
-					}
-				},
-				{
-					"jsDoc": {
-						"doc": "Resets the console colors"
-					},
-					"accessibility": null,
-					"optional": false,
-					"isAbstract": false,
-					"isStatic": false,
-					"name": "ResetColor",
-					"kind": "method",
-					"functionDef": {
-						"params": [],
-						"returnType": null,
-						"hasBody": true,
-						"isAsync": false,
-						"isGenerator": false,
-						"typeParams": []
-					},
-					"location": {
-						"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
-						"line": 65,
-						"col": 2
-					}
-				},
-				{
-					"jsDoc": {
-						"doc": "Writes the console.",
-						"tags": [
-							{
-								"kind": "param",
-								"name": "content",
-								"doc": "a string of characters."
-							}
-						]
-					},
-					"accessibility": null,
-					"optional": false,
-					"isAbstract": false,
-					"isStatic": false,
-					"name": "Write",
-					"kind": "method",
-					"functionDef": {
-						"params": [
-							{
-								"kind": "rest",
-								"arg": {
-									"kind": "identifier",
-									"name": "content",
-									"optional": false,
-									"tsType": null
-								},
-								"tsType": {
-									"repr": "",
-									"kind": "array",
-									"array": {
-										"repr": "string",
-										"kind": "keyword",
-										"keyword": "string"
-									}
-								}
-							}
-						],
-						"returnType": null,
-						"hasBody": true,
-						"isAsync": false,
-						"isGenerator": false,
-						"typeParams": []
-					},
-					"location": {
-						"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
-						"line": 74,
-						"col": 2
-					}
-				},
-				{
-					"jsDoc": {
-						"doc": "Writes the console and prints a new line at the end.",
-						"tags": [
-							{
-								"kind": "param",
-								"name": "content",
-								"doc": "a string of characters."
-							}
-						]
-					},
-					"accessibility": null,
-					"optional": false,
-					"isAbstract": false,
-					"isStatic": false,
-					"name": "WriteLine",
-					"kind": "method",
-					"functionDef": {
-						"params": [
-							{
-								"kind": "rest",
-								"arg": {
-									"kind": "identifier",
-									"name": "content",
-									"optional": false,
-									"tsType": null
-								},
-								"tsType": {
-									"repr": "",
-									"kind": "array",
-									"array": {
-										"repr": "string",
-										"kind": "keyword",
-										"keyword": "string"
-									}
-								}
-							}
-						],
-						"returnType": null,
-						"hasBody": true,
-						"isAsync": false,
-						"isGenerator": false,
-						"typeParams": []
-					},
-					"location": {
-						"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
-						"line": 84,
-						"col": 2
-					}
-				}
-			],
-			"extends": null,
-			"implements": [],
-			"typeParams": [],
-			"superTypeParams": []
-		}
-	},
-	{
-		"kind": "import",
-		"name": "ConsoleColor",
-		"location": {
-			"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
-			"line": 1,
-			"col": 0
-		},
-		"declarationKind": "private",
-		"importDef": {
-			"src": "file:///G:/Development/Deno/DenoTools/src/Console/ConsoleColor.ts",
-			"imported": "ConsoleColor"
-		}
-	},
-	{
-		"kind": "import",
-		"name": "DefaultColor",
-		"location": {
-			"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
-			"line": 1,
-			"col": 0
-		},
-		"declarationKind": "private",
-		"importDef": {
-			"src": "file:///G:/Development/Deno/DenoTools/src/Console/ConsoleColor.ts",
-			"imported": "DefaultColor"
-		}
-	},
-	{
-		"kind": "import",
-		"name": "RestColor",
-		"location": {
-			"filename": "file:///G:/Development/Deno/DenoTools/src/Console/Console.ts",
-			"line": 1,
-			"col": 0
-		},
-		"declarationKind": "private",
-		"importDef": {
-			"src": "file:///G:/Development/Deno/DenoTools/src/Console/ConsoleColor.ts",
-			"imported": "RestColor"
 		}
 	}
 ]
