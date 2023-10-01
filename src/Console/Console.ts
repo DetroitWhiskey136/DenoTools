@@ -13,29 +13,23 @@ export class Console {
   static #initializeColor = this.SetDefaultColor();
 
   /**
-   * Sets the foreground color
+   * Gets/Sets the foreground color
    */
   static get foregroundColor() {
     return this.#foregroundColor;
   }
 
-  /**
-   * Gets the foreground color
-   */
   static set foregroundColor(color: ConsoleColor) {
     this.#foregroundColor = color;
   }
 
   /**
-   * gets the background color
+   * Gets/Sets the background color
    */
   static get backgroundColor() {
     return this.#backgroundColor;
   }
 
-  /**
-   * Sets the background color
-   */
   static set backgroundColor(color: ConsoleColor) {
     this.#backgroundColor = color+10
   }
