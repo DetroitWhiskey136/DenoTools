@@ -10,7 +10,16 @@ type PrivateConsoleColor = number | ConsoleColor;
 export class Console {
   static #foregroundColor: PrivateConsoleColor;
   static #backgroundColor: PrivateConsoleColor;
-  static #initializeColor = this.SetDefaultColor();
+
+  /**
+   * Inialized the default colors for some reason 😊.
+   */
+  static #setDefaultColor = () => {
+    this.#backgroundColor = DefaultColor+10;
+    this.#foregroundColor = DefaultColor;
+  }
+
+  static #initializeColor = this.#setDefaultColor();
 
   /**
    * Gets/Sets the foreground color
@@ -34,19 +43,13 @@ export class Console {
     this.#backgroundColor = color+10
   }
 
-  /**
-   * Inialized the default colors for some reason 😊.
-   */
-  private static SetDefaultColor() {
-    this.#backgroundColor = DefaultColor+10;
-    this.#foregroundColor = DefaultColor;
-  }
+
 
   /**
    * This is the internal writer. if you see this you did a bad.
    * @param content a string of characters.
    */
-  private static write = (...content: string[]) => {
+  static #write = (...content: string[]) => {
     Deno.writeSync(Deno.stdout.rid, new TextEncoder().encode(...content));
   }
 
@@ -54,8 +57,8 @@ export class Console {
    * Resets the console colors
    */
   static ResetColor() {
-    this.write(`\x1b[${RestColor}m`);
-    this.SetDefaultColor();
+    this.#write(`\x1b[${RestColor}m`);
+    this.#setDefaultColor();
   }
 
   /**
@@ -63,9 +66,9 @@ export class Console {
    * @param content a string of characters.
    */
   static Write(...content: string[]) {
-    this.write(`\x1b[${this.#foregroundColor};${this.#backgroundColor}m`)
-      this.write(...content);
-      this.write(`\x1b[${RestColor}m`);
+    this.#write(`\x1b[${this.#foregroundColor};${this.#backgroundColor}m`)
+      this.#write(...content);
+      this.#write(`\x1b[${RestColor}m`);
   }
 
   /**
